@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
+
+
+
+
+.newsheading {
+    /* width: 20vw; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    margin: auto;
+    /* justify-content: center; */
+    text-align: center;
+    margin-top: 6rem;
+}
+
+.newsheader {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    margin: auto;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    justify-content: space-between;
+}
+
+
+
+
+.headerbtn button:hover {
+    /* color: rgb(24, 24, 128); */
+    /* color: white; */
+    box-shadow: 2px 2px 3px rgb(110, 110, 110);
+
+
+}
+
+.headerbtn button {
+    /* font-weight: 600; */
+    font-size: 1rem;
+
+    color: white;
+    border: none;
+    padding: .4rem 2.3rem;
+    background-color: rgb(30, 30, 158);
+    border-radius: .3rem;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.superdetail a {
+    background-color: transparent;
+    box-shadow: 0;
+}
+
+input:focus {
+
+    box-shadow: 2px 2px 4px rgb(165, 165, 165);
+}
+
+input {
+    border-radius: .3rem;
+    margin-left: .5rem;
+    width: 20rem;
+    border: 1px solid rgb(219, 219, 219);
+    padding: .3rem .3rem;
+    outline: 0;
+
+}
+
+.news {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    width: 60%;
+
+}
+
+.superdetail a {
+    font-size: .9rem;
+}
+
+.headlines button {
+    background-color: red;
+    border-radius: .4rem;
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: .6rem 0;
+    color: white;
+    cursor: pointer;
+
+
+}
+
+.heading h1 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.headlines {
+    width: 90%;
+    box-shadow: 3px 3px 3px rgb(161, 161, 161);
+    /* border: 1px solid black; */
+    padding: 1rem;
+
+    margin: .7rem 0;
+
+}
+
+.headlines img {
+    width: 100%;
+    height: 250px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+
+}

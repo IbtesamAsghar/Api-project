@@ -1,0 +1,194 @@
+.headersuper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    margin: auto;
+    text-align: center;
+}
+
+.superheader {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.headersuper img {
+    width: 70px;
+    border-radius: 50%;
+    height: 70px;
+    margin-top: 1.4rem;
+}
+
+.superHero {
+    display: flex;
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 8px 1px #E9E9E9;
+
+    margin: 1.5rem 0;
+    height: 300px;
+}
+
+.hero {
+
+    /* display: grid;
+    grid-template-columns: 800px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+
+
+}
+
+@media (max-width:1270px) {
+    .hero {
+        width: 60%;
+    }
+
+    .superheader {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+
+    }
+
+}
+
+@media (max-width:1090px) {
+    .hero {
+        width: 80%;
+    }
+
+    .superheader {
+
+
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .superheader {
+
+        width: 95%;
+
+    }
+}
+
+@media (max-width:590px) {
+    .superheader {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search {
+        margin-top: 1rem;
+    }
+
+    .superHero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        /* height: 100%;
+        width: 80vw; */
+        /* border-radius: 1rem 1rem 0 0; */
+        /* border-radius: 0; */
+        /* border: 2px solid green; */
+        display: none;
+    }
+}
+
+.superheader {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.powerstat {
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+
+
+
+.superHero button {
+    border: none;
+    background-color: blue;
+    color: white;
+    padding: .4rem 1.3rem;
+    font-size: .8rem;
+    border-radius: .3rem;
+}
+
+
+
+
+
+.powerstat p {
+
+    background-color: #E9E9E9;
+    margin: .5rem .3rem;
+    font-size: .8rem;
+    padding: .2rem .8rem;
+
+    border-radius: .2rem;
+
+
+
+}
+
+.btnremove {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.superHero img {
+    width: 30%;
+    height: 100%;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.superdetail {
+    margin: auto 32px;
+
+}
+
+.superdetail h1 {
+    font-weight: 500;
+    font-size: 27px;
+}
+
+.superdetail>p {
+    font-size: 14px;
+    color: gray;
+}
+
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: rgb(30, 30, 158);
+    color: white;
+    cursor: pointer;
+    border-radius: .4rem;
+    border: none;
+    box-shadow: 1px 1px 5px rgb(110, 110, 110);
+    padding: 0 1rem;
+}
+
+.back-to-top:hover {
+    background: rgb(30, 30, 134);
+}

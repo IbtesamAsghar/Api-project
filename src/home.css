@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allan&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.containerApp {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10rem;
+    margin: auto;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.head {
+    font-family: 'Anton', sans-serif;
+    letter-spacing: .1rem;
+    transform: skewY(-7deg);
+
+
+}
+
+.containerApp .textApp {
+    width: 30%;
+
+}
+
+
+
+.textApp h1 {
+    font-size: 2.9rem;
+
+}
+
+.image {
+    transition: all 9s ease-in-out;
+}
+
+
+
+
+.btnApp {
+    margin-top: 3rem;
+}
+
+
+.btnApp button {
+    text-decoration: none;
+    padding: .5rem 1.5rem;
+    border: 2px solid #FFD234;
+    position: relative;
+    color: #FFD234;
+    letter-spacing: .1px;
+    background-color: transparent;
+    border-radius: 1.4rem;
+    font-size: .9rem;
+}
+
+.btnApp button::after {
+    content: "";
+    position: absolute;
+    background-color: #FFD234;
+    /* border-bottom-right-radius: .6rem;
+    border-top-right-radius: .6rem; */
+    height: 100%;
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    border-radius: 2rem;
+    transition: 0.5s;
+}
+
+
+.btnApp button:hover::after {
+    width: 100%;
+    /* border-bottom-right-radius: 0;
+    border-top-right-radius: 0; */
+    transition: 0.5s;
+    z-index: -1;
+    /* border-radius: 2rem; */
+}
+
+
+.btnApp button:hover {
+    font-weight: 600;
+    border: 1px solid #FFD234;
+    color: rgb(24, 24, 128);
+    box-shadow: 1px 1px 2px rgb(110, 110, 110);
+
+
+}
+
+.image img {
+    width: 100%;
+}
+
+.image {
+    width: 55%;
+}
+
+
+
+
+
+@media(max-width:1290px) {
+    .image {
+        width: 65%;
+
+    }
+
+
+}
+
+@media (max-width:1070px) {
+    .image {
+        display: none;
+    }
+
+    .containerApp .textApp {
+        width: 80%;
+    }
+}
+
+@media (max-width:800px) {
+    .containerApp .textApp {
+        width: 100%;
+    }
+}
+
+@media (max-width:600px) {
+    .cardsApp {
+        display: flex;
+        flex-direction: column;
+        /* width: 20vw; */
+        width: 50%;
+        margin: 2px;
+    }
+
+    .box {
+        width: 90vw;
+    }
+
+    .cardApp {
+
+        margin-top: 1rem;
+    }
+
+}
+
+.containerApp::before {
+    content: "";
+    background: url("./image/web.png");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 100%;
+    z-index: -1;
+}
+
+.cardsApp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto; */
+    margin-top: 2rem;
+    /* height: 70vh; */
+    width: 92vw;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    margin-top: 5%;
+    height: 80vh;
+    align-items: center;
+
+    /* margin: auto; */
+
+}
+
+.cardApp {
+    padding: 1.5rem 3rem;
+    text-align: center;
+    letter-spacing: .2px;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, .1),
+        -4px 4px 4px rgba(0, 0, 0, .1), 4px 4px 4px rgba(0, 0, 0, .1);
+    position: relative;
+}
+
+.cardsApp a {
+    text-decoration: none;
+    margin: 0 1rem;
+    color: black;
+    position: relative;
+
+}
+
+
+
+.cardApp::after {
+    content: "";
+    width: 0%;
+    height: .2rem;
+    position: absolute;
+    left: 0;
+    background-color: #539eca;
+    top: 0;
+
+    transition: all .4s;
+}
+
+.cardApp:hover::after {
+    width: 100%;
+}
+
+.cardApp:hover {
+    background-color: transparent;
+    color: #539eca;
+}
